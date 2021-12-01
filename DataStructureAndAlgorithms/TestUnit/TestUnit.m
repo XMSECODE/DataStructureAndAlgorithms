@@ -29,11 +29,15 @@
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    XCTAssertEqual(maxLenthInTheString(""), 0);
-    XCTAssertEqual(maxLenthInTheString("aaa"), 1);
-    XCTAssertEqual(maxLenthInTheString("abcabc"), 3);
-    XCTAssertEqual(maxLenthInTheString("abba"), 2);
-    XCTAssertEqual(maxLenthInTheString("abcabcabcabcabcabcabcabc"), 3);
+    char chars[5][100] = {"","aaa","abcabc","abba","abcabcabcabcabcabcabcabc"};
+    int resultLArray[] = {0,1,3,2,3};
+    for (int i = 0; i < 5; i++) {
+        char *testChars = chars[i];
+        int resultL = resultLArray[i];
+        XCTAssertEqual(maxLenthInTheString(testChars), resultL);
+    }
+    
+   
 
 }
 
