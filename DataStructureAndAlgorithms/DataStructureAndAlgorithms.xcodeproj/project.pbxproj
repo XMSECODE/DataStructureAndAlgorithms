@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422930BD2757198E00B4083C /* TestUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 422930BC2757198E00B4083C /* TestUnit.m */; };
+		422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
 		5C7EC7A827564625006691F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7A727564625006691F0 /* main.m */; };
 		5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		422930BA2757198E00B4083C /* TestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		422930BC2757198E00B4083C /* TestUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUnit.m; sourceTree = "<group>"; };
 		5C7EC7A427564625006691F0 /* DataStructureAndAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAndAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7EC7A727564625006691F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C7EC7AE275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetMaxLenthNotTheSameCharSubString.h; sourceTree = "<group>"; };
@@ -31,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		422930B72757198E00B4083C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C7EC7A127564625006691F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +52,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		422930BB2757198E00B4083C /* TestUnit */ = {
+			isa = PBXGroup;
+			children = (
+				422930BC2757198E00B4083C /* TestUnit.m */,
+			);
+			path = TestUnit;
+			sourceTree = "<group>";
+		};
 		5C7EC79B27564625006691F0 = {
 			isa = PBXGroup;
 			children = (
 				5C7EC7A627564625006691F0 /* DataStructureAndAlgorithms */,
+				422930BB2757198E00B4083C /* TestUnit */,
 				5C7EC7A527564625006691F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A427564625006691F0 /* DataStructureAndAlgorithms */,
+				422930BA2757198E00B4083C /* TestUnit.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +99,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		422930B92757198E00B4083C /* TestUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422930C02757198E00B4083C /* Build configuration list for PBXNativeTarget "TestUnit" */;
+			buildPhases = (
+				422930B62757198E00B4083C /* Sources */,
+				422930B72757198E00B4083C /* Frameworks */,
+				422930B82757198E00B4083C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestUnit;
+			productName = TestUnit;
+			productReference = 422930BA2757198E00B4083C /* TestUnit.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5C7EC7A327564625006691F0 /* DataStructureAndAlgorithms */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C7EC7AB27564625006691F0 /* Build configuration list for PBXNativeTarget "DataStructureAndAlgorithms" */;
@@ -104,6 +142,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					422930B92757198E00B4083C = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					5C7EC7A327564625006691F0 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -123,11 +164,31 @@
 			projectRoot = "";
 			targets = (
 				5C7EC7A327564625006691F0 /* DataStructureAndAlgorithms */,
+				422930B92757198E00B4083C /* TestUnit */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		422930B82757198E00B4083C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		422930B62757198E00B4083C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422930BD2757198E00B4083C /* TestUnit.m in Sources */,
+				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C7EC7A027564625006691F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +201,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		422930BE2757198E00B4083C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QL8778DJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gituhub.com.TestUnit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		422930BF2757198E00B4083C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QL8778DJ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gituhub.com.TestUnit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
 		5C7EC7A927564625006691F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -274,6 +375,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		422930C02757198E00B4083C /* Build configuration list for PBXNativeTarget "TestUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422930BE2757198E00B4083C /* Debug */,
+				422930BF2757198E00B4083C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5C7EC79F27564625006691F0 /* Build configuration list for PBXProject "DataStructureAndAlgorithms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
