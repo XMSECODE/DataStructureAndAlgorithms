@@ -7,6 +7,7 @@
 
 #import <XCTest/XCTest.h>
 #import "GetMaxLenthNotTheSameCharSubString.h"
+#import "ReverseDataTable.h"
 
 @interface TestUnit : XCTestCase
 
@@ -25,7 +26,7 @@
 }
 
 ///求字符串中不包含重复字符的最大子字符串长度
-- (void)testExample1 {
+- (void)testDemo1 {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
@@ -37,8 +38,57 @@
         XCTAssertEqual(maxLenthInTheString(testChars), resultL);
     }
     
+    
+    
+    
    
 
+}
+///反转单向链表
+- (void)testDemo2 {
+    Data testData;
+    int a = random() % 100;
+    testData.data = a;
+    testData.nextData = NULL;
+    
+    Data *resultData = reverseDataTalbe(&testData);
+    
+    XCTAssertEqual(resultData->data, a);
+    
+    XCTAssertEqual(reverseDataTalbe(NULL), NULL);
+
+    
+    Data *firstData;
+    Data *olddata = NULL;
+    int datas[10];
+    for (int i = 0; i < 10; i++) {
+        Data *newData = malloc(sizeof(Data));
+        datas[i] = random() % 100;
+        newData->data = datas[i];
+        newData->nextData = NULL;
+        if (i == 0) {
+            firstData = newData;
+            olddata = &(*newData);
+        }else {
+            olddata->nextData = newData;
+            olddata = newData;
+        }
+    }
+    olddata = firstData;
+    int i = 0;
+    while (olddata != NULL) {
+        XCTAssertEqual(olddata->data, datas[i]);
+        olddata = olddata->nextData;
+        i++;
+    }
+    
+    olddata = reverseDataTalbe(firstData);
+    i = 0;
+    while (olddata != NULL) {
+        XCTAssertEqual(olddata->data, datas[9 - i]);
+        olddata = olddata->nextData;
+        i++;
+    }
 }
 
 
