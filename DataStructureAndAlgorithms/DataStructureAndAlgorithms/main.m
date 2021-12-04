@@ -12,45 +12,85 @@
 
 #import "ReverseDataTable.h"
 
+#import "CharIsUnique.h"
+
 
 int main(int argc, const char * argv[]) {
-
-//    {
-//        int result = maxLenthInTheString("abcdabccc");
-//        printf("求得最长不包含重复字符的子字符串的长度：%d\n",result);
-//
-//    }
+    
+    //    {
+    //        int result = maxLenthInTheString("abcdabccc");
+    //        printf("求得最长不包含重复字符的子字符串的长度：%d\n",result);
+    //
+    //    }
     
     ////反转单向链表
+    //    {
+    //        Data *firstData;
+    //        Data *olddata = NULL;
+    //        for (int i = 0; i < 1000; i++) {
+    //            Data *newData = malloc(sizeof(Data));
+    //            newData->data = i;
+    //            newData->nextData = NULL;
+    //            if (i == 0) {
+    //                firstData = newData;
+    //                olddata = &(*newData);
+    //            }else {
+    //                olddata->nextData = newData;
+    //                olddata = newData;
+    //            }
+    //        }
+    //        olddata = firstData;
+    //        while (olddata != NULL) {
+    //            printf("%d\n",olddata->data);
+    //            olddata = olddata->nextData;
+    //        }
+    //
+    //        olddata = reverseDataTalbe(firstData);
+    //        while (olddata != NULL) {
+    //            printf("%d\n",olddata->data);
+    //            olddata = olddata->nextData;
+    //        }
+    //
+    //
+    //    }
+    
+    
+    //判定字符是否唯一
+    
     {
-        Data *firstData;
-        Data *olddata = NULL;
-        for (int i = 0; i < 1000; i++) {
-            Data *newData = malloc(sizeof(Data));
-            newData->data = i;
-            newData->nextData = NULL;
-            if (i == 0) {
-                firstData = newData;
-                olddata = &(*newData);
-            }else {
-                olddata->nextData = newData;
-                olddata = newData;
+        {
+            double startTime = CFAbsoluteTimeGetCurrent();
+            for (int i = 0; i < 10000000; i++) {
+                {
+                    
+                    int result = isUnique2("leetcode");
+                    result = isUnique2("abc");
+                }
             }
+            
+            
+            double endTime = CFAbsoluteTimeGetCurrent();
+            double time = endTime - startTime;
+            NSLog(@"方法1:%f",time);
         }
-        olddata = firstData;
-        while (olddata != NULL) {
-            printf("%d\n",olddata->data);
-            olddata = olddata->nextData;
+        {
+            double startTime = CFAbsoluteTimeGetCurrent();
+            for (int i = 0; i < 10000000; i++) {
+                //判定字符是否唯一
+                {
+                    
+                    int result = isUnique("leetcode");
+                    result = isUnique("abc");
+                }
+            }
+            
+            
+            double endTime = CFAbsoluteTimeGetCurrent();
+            double time = endTime - startTime;
+            NSLog(@"方法2:%f",time);
         }
-        
-        olddata = reverseDataTalbe(firstData);
-        while (olddata != NULL) {
-            printf("%d\n",olddata->data);
-            olddata = olddata->nextData;
-        }
-        
-        
     }
+    
     
     
     return 0;

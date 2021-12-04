@@ -13,6 +13,8 @@
 		5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5422B72758FE070090F40B /* ReverseDataTable.c */; };
 		5C7EC7A827564625006691F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7A727564625006691F0 /* main.m */; };
 		5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
+		5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
+		5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,8 @@
 		5C7EC7A727564625006691F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C7EC7AE275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetMaxLenthNotTheSameCharSubString.h; sourceTree = "<group>"; };
 		5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GetMaxLenthNotTheSameCharSubString.c; sourceTree = "<group>"; };
+		5C8D5E75275AF9D5000DDA97 /* CharIsUnique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharIsUnique.h; sourceTree = "<group>"; };
+		5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CharIsUnique.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5C8D5E74275AF99D000DDA97 /* 判定字符是否唯一 */,
 				5C5422B52758FDCE0090F40B /* 反转单向链表 */,
 				5C7EC7B1275646E9006691F0 /* 求字符串中不包含重复字符的最大子字符串长度 */,
 			);
@@ -108,6 +113,15 @@
 				5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */,
 			);
 			path = "求字符串中不包含重复字符的最大子字符串长度";
+			sourceTree = "<group>";
+		};
+		5C8D5E74275AF99D000DDA97 /* 判定字符是否唯一 */ = {
+			isa = PBXGroup;
+			children = (
+				5C8D5E75275AF9D5000DDA97 /* CharIsUnique.h */,
+				5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */,
+			);
+			path = "判定字符是否唯一";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
 				422930BD2757198E00B4083C /* TestUnit.m in Sources */,
 				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */,
@@ -208,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
 				5C7EC7A827564625006691F0 /* main.m in Sources */,
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,

@@ -8,6 +8,7 @@
 #import <XCTest/XCTest.h>
 #import "GetMaxLenthNotTheSameCharSubString.h"
 #import "ReverseDataTable.h"
+#import "CharIsUnique.h"
 
 @interface TestUnit : XCTestCase
 
@@ -38,10 +39,6 @@
         XCTAssertEqual(maxLenthInTheString(testChars), resultL);
     }
     
-    
-    
-    
-   
 
 }
 ///反转单向链表
@@ -91,6 +88,17 @@
     }
 }
 
+///字符是否唯一
+- (void)testDemo3 {
+    int result = isUnique("leetcode");
+    XCTAssertEqual(result, 0);
+    result = isUnique("abc");
+    XCTAssertEqual(result, 1);
+    result = isUnique("abcefghijklmnopqrstuvwxyz");
+    XCTAssertEqual(result, 1);
+    result = isUnique("abcefghijklmnopqrstuvwxyzz");
+    XCTAssertEqual(result, 0);
+}
 
 
 @end
