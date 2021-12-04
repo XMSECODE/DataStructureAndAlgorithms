@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		422930BD2757198E00B4083C /* TestUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 422930BC2757198E00B4083C /* TestUnit.m */; };
 		422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
+		5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C506157275BC682009C5DA8 /* IsPalindrome.c */; };
+		5C506159275BC682009C5DA8 /* IsPalindrome.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C506157275BC682009C5DA8 /* IsPalindrome.c */; };
 		5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5422B72758FE070090F40B /* ReverseDataTable.c */; };
 		5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5422B72758FE070090F40B /* ReverseDataTable.c */; };
 		5C7EC7A827564625006691F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7A727564625006691F0 /* main.m */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		422930BA2757198E00B4083C /* TestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422930BC2757198E00B4083C /* TestUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUnit.m; sourceTree = "<group>"; };
+		5C506156275BC682009C5DA8 /* IsPalindrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPalindrome.h; sourceTree = "<group>"; };
+		5C506157275BC682009C5DA8 /* IsPalindrome.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPalindrome.c; sourceTree = "<group>"; };
 		5C5422B62758FE070090F40B /* ReverseDataTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseDataTable.h; sourceTree = "<group>"; };
 		5C5422B72758FE070090F40B /* ReverseDataTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseDataTable.c; sourceTree = "<group>"; };
 		5C7EC7A427564625006691F0 /* DataStructureAndAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAndAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,15 @@
 			path = TestUnit;
 			sourceTree = "<group>";
 		};
+		5C506155275BC666009C5DA8 /* 验证回文串 */ = {
+			isa = PBXGroup;
+			children = (
+				5C506156275BC682009C5DA8 /* IsPalindrome.h */,
+				5C506157275BC682009C5DA8 /* IsPalindrome.c */,
+			);
+			path = "验证回文串";
+			sourceTree = "<group>";
+		};
 		5C5422B52758FDCE0090F40B /* 反转单向链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5C506155275BC666009C5DA8 /* 验证回文串 */,
 				5C8D5E74275AF99D000DDA97 /* 判定字符是否唯一 */,
 				5C5422B52758FDCE0090F40B /* 反转单向链表 */,
 				5C7EC7B1275646E9006691F0 /* 求字符串中不包含重复字符的最大子字符串长度 */,
@@ -213,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
+				5C506159275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				422930BD2757198E00B4083C /* TestUnit.m in Sources */,
 				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */,
@@ -224,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
+				5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				5C7EC7A827564625006691F0 /* main.m in Sources */,
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,

@@ -14,6 +14,8 @@
 
 #import "CharIsUnique.h"
 
+#import "IsPalindrome.h"
+
 
 int main(int argc, const char * argv[]) {
     
@@ -57,41 +59,51 @@ int main(int argc, const char * argv[]) {
     
     //判定字符是否唯一
     
-    {
-        {
-            double startTime = CFAbsoluteTimeGetCurrent();
-            for (int i = 0; i < 10000000; i++) {
-                {
-                    
-                    int result = isUnique2("leetcode");
-                    result = isUnique2("abc");
-                }
-            }
-            
-            
-            double endTime = CFAbsoluteTimeGetCurrent();
-            double time = endTime - startTime;
-            NSLog(@"方法1:%f",time);
-        }
-        {
-            double startTime = CFAbsoluteTimeGetCurrent();
-            for (int i = 0; i < 10000000; i++) {
-                //判定字符是否唯一
-                {
-                    
-                    int result = isUnique("leetcode");
-                    result = isUnique("abc");
-                }
-            }
-            
-            
-            double endTime = CFAbsoluteTimeGetCurrent();
-            double time = endTime - startTime;
-            NSLog(@"方法2:%f",time);
-        }
-    }
+//    {
+//        {
+//            double startTime = CFAbsoluteTimeGetCurrent();
+//            for (int i = 0; i < 10000000; i++) {
+//                {
+//
+//                    int result = isUnique2("leetcode");
+//                    result = isUnique2("abc");
+//                }
+//            }
+//
+//
+//            double endTime = CFAbsoluteTimeGetCurrent();
+//            double time = endTime - startTime;
+//            NSLog(@"方法1:%f",time);
+//        }
+//        {
+//            double startTime = CFAbsoluteTimeGetCurrent();
+//            for (int i = 0; i < 10000000; i++) {
+//                //判定字符是否唯一
+//                {
+//
+//                    int result = isUnique("leetcode");
+//                    result = isUnique("abc");
+//                }
+//            }
+//
+//
+//            double endTime = CFAbsoluteTimeGetCurrent();
+//            double time = endTime - startTime;
+//            NSLog(@"方法2:%f",time);
+//        }
+//    }
     
-    
+//    {
+//        double startTime = CFAbsoluteTimeGetCurrent();
+//        for (int i = 0; i < 600000; i++) {
+//            int result = isPalindrome("A man, a plan, a canal: Panama");
+////            printf("%d\n",result);
+//        }
+//        double endTime = CFAbsoluteTimeGetCurrent();
+//        double time = endTime - startTime;
+//        NSLog(@"%f",time);
+//
+//    }
     
     return 0;
 }

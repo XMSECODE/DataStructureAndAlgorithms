@@ -9,6 +9,8 @@
 #import "GetMaxLenthNotTheSameCharSubString.h"
 #import "ReverseDataTable.h"
 #import "CharIsUnique.h"
+#import "IsPalindrome.h"
+
 
 @interface TestUnit : XCTestCase
 
@@ -100,5 +102,15 @@
     XCTAssertEqual(result, 0);
 }
 
+///验证回文串
+- (void)testDemo4 {
+    int result = isPalindrome("A man, a plan, a canal: Panama");
+    XCTAssertEqual(result, 1);
+    result = isPalindrome("race a car");
+    XCTAssertEqual(result, 0);
+    result = isPalindrome("0P");
+    XCTAssertEqual(result, 0);
+
+}
 
 @end
