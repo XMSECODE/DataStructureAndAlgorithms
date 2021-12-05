@@ -10,6 +10,7 @@
 #import "ReverseDataTable.h"
 #import "CharIsUnique.h"
 #import "IsPalindrome.h"
+#include "MinTaps.h"
 
 
 @interface TestUnit : XCTestCase
@@ -112,5 +113,46 @@
     XCTAssertEqual(result, 0);
 
 }
+
+- (void)testDemo5 {
+    {
+        int range[6] = {3,4,1,1,0,0};
+        int result1 = minTaps(5, range, 0);
+        int result2 = minTaps2(5, range, 0);
+        XCTAssertEqual(result1, 1);
+        XCTAssertEqual(result2, 1);
+    }
+    {
+        int range[4] = {0,0,0,0};
+        int result1 = minTaps(3, range, 0);
+        int result2 = minTaps2(3, range, 0);
+        XCTAssertEqual(result1, -1);
+        XCTAssertEqual(result2, -1);
+    }
+    {
+        int range[8] = {1,2,1,0,2,1,0,1};
+        int result1 = minTaps(7, range, 0);
+        int result2 = minTaps2(7, range, 0);
+        XCTAssertEqual(result1, 3);
+        XCTAssertEqual(result2, 3);
+    }
+    {
+        int range[9] = {4,0,0,0,0,0,0,0,4};
+        int result1 = minTaps(8, range, 0);
+        int result2 = minTaps2(8, range, 0);
+        XCTAssertEqual(result1, 2);
+        XCTAssertEqual(result2, 2);
+    }
+    {
+        int range[9] = {4,0,0,0,4,0,0,0,4};
+        int result1 = minTaps(8, range, 0);
+        int result2 = minTaps2(8, range, 0);
+        XCTAssertEqual(result1, 1);
+        XCTAssertEqual(result2, 1);
+    }
+    
+
+}
+
 
 @end
