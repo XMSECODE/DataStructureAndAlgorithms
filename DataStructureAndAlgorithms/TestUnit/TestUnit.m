@@ -11,6 +11,7 @@
 #import "CharIsUnique.h"
 #import "IsPalindrome.h"
 #include "MinTaps.h"
+#include "SumNumbers.h"
 
 
 @interface TestUnit : XCTestCase
@@ -151,7 +152,27 @@
         XCTAssertEqual(result2, 1);
     }
     
+}
 
+///求根节点到叶节点数字之和
+- (void)testDemo6 {
+    
+    struct TreeNode *rootNode = createTreeNode(1);
+    rootNode->left = createTreeNode(2);
+    rootNode->right = createTreeNode(3);
+    int result = sumNumbers(rootNode);
+    freeNode(rootNode);
+    XCTAssertEqual(result, 25);
+    
+    rootNode = createTreeNode(4);
+    rootNode->right = createTreeNode(0);
+    struct TreeNode *rootLeftNode = createTreeNode(9);
+    rootNode->left = rootLeftNode;
+    rootLeftNode->left = createTreeNode(5);
+    rootLeftNode->right = createTreeNode(1);
+    result = sumNumbers(rootNode);
+    freeNode(rootNode);
+    XCTAssertEqual(result, 1026);
 }
 
 

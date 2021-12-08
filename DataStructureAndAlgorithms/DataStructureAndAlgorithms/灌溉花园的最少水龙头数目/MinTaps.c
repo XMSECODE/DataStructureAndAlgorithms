@@ -149,28 +149,6 @@ int minTaps2(int n, int* ranges, int rangesSize) {
             count += 2;
         }
     }
-//    int s = 0;
-//    for (int i = 0; i < count; i += 2) {
-//        int irangMin = p[i];
-//        int irangMax = p[i + 1];
-//        for (int j = i + 1; j < count; j += 2) {
-//            int jrangMin = p[j];
-//            int jrangMax = p[j + 1];
-//            if (jrangMin < irangMin) {
-//                p[i] = jrangMin;
-//                p[i + 1] = jrangMax;
-//                p[j] = irangMin;
-//                p[j + 1] = irangMax;
-//            }
-//            else if(jrangMin == irangMin &&
-//                     jrangMax > irangMax) {
-//                p[i] = jrangMin;
-//                p[i + 1] = jrangMax;
-//                p[j] = irangMin;
-//                p[j + 1] = irangMax;
-//            }
-//        }
-//    }
     int m = 0;
     int start = 0;
     int cStart = 0;
@@ -199,8 +177,6 @@ int minTaps2(int n, int* ranges, int rangesSize) {
         start = end;
         counts++;
     }
-    
     free(p);
-    
     return  counts;
 }
