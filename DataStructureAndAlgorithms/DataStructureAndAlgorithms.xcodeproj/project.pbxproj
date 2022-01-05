@@ -21,6 +21,10 @@
 		5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
 		5CA810A02760E47C009474DC /* SumNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8109F2760E47C009474DC /* SumNumbers.c */; };
 		5CA810A12760E47C009474DC /* SumNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8109F2760E47C009474DC /* SumNumbers.c */; };
+		5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */; };
+		5CC264B2278448A3004B79D5 /* FindLengthOfLCIS.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */; };
+		5CFD390427622989000F5F6A /* MinScoreTriangulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD390327622989000F5F6A /* MinScoreTriangulation.c */; };
+		5CFD390527622989000F5F6A /* MinScoreTriangulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD390327622989000F5F6A /* MinScoreTriangulation.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +58,11 @@
 		5CA8109F2760E47C009474DC /* SumNumbers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SumNumbers.c; sourceTree = "<group>"; };
 		5CA810A22760E50C009474DC /* Snip20211208_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20211208_7.png; sourceTree = "<group>"; };
 		5CA810A32760E50C009474DC /* Snip20211208_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20211208_8.png; sourceTree = "<group>"; };
+		5CC264AF278448A0004B79D5 /* FindLengthOfLCIS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLengthOfLCIS.h; sourceTree = "<group>"; };
+		5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindLengthOfLCIS.c; sourceTree = "<group>"; };
+		5CFD390227622989000F5F6A /* MinScoreTriangulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinScoreTriangulation.h; sourceTree = "<group>"; };
+		5CFD390327622989000F5F6A /* MinScoreTriangulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinScoreTriangulation.c; sourceTree = "<group>"; };
+		5CFD390627622A40000F5F6A /* Snip20211209_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20211209_16.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5CC264AE2784487C004B79D5 /* 最长连续递增序列 */,
+				5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */,
 				5CB1CF9E275F9CA3001CBF50 /* 求根节点到叶节点数字之和 */,
 				5CED9C0F275C621100C8FFA5 /* 灌溉花园的最少水龙头数目 */,
 				5C506155275BC666009C5DA8 /* 验证回文串 */,
@@ -161,6 +172,15 @@
 			path = "求根节点到叶节点数字之和";
 			sourceTree = "<group>";
 		};
+		5CC264AE2784487C004B79D5 /* 最长连续递增序列 */ = {
+			isa = PBXGroup;
+			children = (
+				5CC264AF278448A0004B79D5 /* FindLengthOfLCIS.h */,
+				5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */,
+			);
+			path = "最长连续递增序列";
+			sourceTree = "<group>";
+		};
 		5CED9C0F275C621100C8FFA5 /* 灌溉花园的最少水龙头数目 */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +188,16 @@
 				5C1D4DC6275C63A40054BB0C /* MinTaps.c */,
 			);
 			path = "灌溉花园的最少水龙头数目";
+			sourceTree = "<group>";
+		};
+		5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */ = {
+			isa = PBXGroup;
+			children = (
+				5CFD390227622989000F5F6A /* MinScoreTriangulation.h */,
+				5CFD390327622989000F5F6A /* MinScoreTriangulation.c */,
+				5CFD390627622A40000F5F6A /* Snip20211209_16.png */,
+			);
+			path = "多边形三角剖分的最低得分";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC264B2278448A3004B79D5 /* FindLengthOfLCIS.c in Sources */,
 				5CA810A12760E47C009474DC /* SumNumbers.c in Sources */,
+				5CFD390527622989000F5F6A /* MinScoreTriangulation.c in Sources */,
 				5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */,
 				5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
 				5C506159275BC682009C5DA8 /* IsPalindrome.c in Sources */,
@@ -272,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */,
 				5CA810A02760E47C009474DC /* SumNumbers.c in Sources */,
+				5CFD390427622989000F5F6A /* MinScoreTriangulation.c in Sources */,
 				5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */,
 				5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
 				5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */,

@@ -20,6 +20,10 @@
 
 #include "SumNumbers.h"
 
+#include "MinScoreTriangulation.h"
+
+#include "FindLengthOfLCIS.h"
+
 
 int main(int argc, const char * argv[]) {
     
@@ -121,26 +125,38 @@ int main(int argc, const char * argv[]) {
 //
 //    }
     
+//    {
+//        //求根节点到叶节点数字之和
+//
+//        struct TreeNode *rootNode = createTreeNode(1);
+//        rootNode->left = createTreeNode(2);
+//        rootNode->right = createTreeNode(3);
+//        int result = sumNumbers(rootNode);
+//        printf("%d\n",result);
+//        freeNode(rootNode);
+//
+//        rootNode = createTreeNode(4);
+//        rootNode->right = createTreeNode(0);
+//        struct TreeNode *rootLeftNode = createTreeNode(9);
+//        rootNode->left = rootLeftNode;
+//        rootLeftNode->left = createTreeNode(5);
+//        rootLeftNode->right = createTreeNode(1);
+//        result = sumNumbers(rootNode);
+//        printf("%d\n",result);
+//        freeNode(rootNode);
+//
+//    }
     {
-        //求根节点到叶节点数字之和
+        int arr[] = {61,16,46,22,94,50,29,46,7,33};
+        double startTime = CFAbsoluteTimeGetCurrent();
+        int result = minScoreTriangulation(arr, 10);
         
-        struct TreeNode *rootNode = createTreeNode(1);
-        rootNode->left = createTreeNode(2);
-        rootNode->right = createTreeNode(3);
-        int result = sumNumbers(rootNode);
+        double endTime = CFAbsoluteTimeGetCurrent();
+        double time = endTime - startTime;
+        NSLog(@"%f",time);
         printf("%d\n",result);
-        freeNode(rootNode);
-        
-        rootNode = createTreeNode(4);
-        rootNode->right = createTreeNode(0);
-        struct TreeNode *rootLeftNode = createTreeNode(9);
-        rootNode->left = rootLeftNode;
-        rootLeftNode->left = createTreeNode(5);
-        rootLeftNode->right = createTreeNode(1);
-        result = sumNumbers(rootNode);
-        printf("%d\n",result);
-        freeNode(rootNode);
-        
     }
+    int arr[] = {61,16,46,22,94,50,29,46,7,33};
+    findLengthOfLCIS(arr, 5);
     return 0;
 }
