@@ -23,6 +23,7 @@
 #include "MinScoreTriangulation.h"
 
 #include "FindLengthOfLCIS.h"
+#include "CanBeValid.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -156,7 +157,15 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%f",time);
         printf("%d\n",result);
     }
-    int arr[] = {61,16,46,22,94,50,29,46,7,33};
-    findLengthOfLCIS(arr, 5);
+//    {
+//    int arr[] = {61,16,46,22,94,50,29,46,7,33};
+//        findLengthOfLCIS(arr, 5);
+//    }
+    char* s = "))()))";
+    char*locked = "010100";
+    int result = canBeValid(s, locked);
+    NSLog(@"%d",result);
     return 0;
 }
+//
+//

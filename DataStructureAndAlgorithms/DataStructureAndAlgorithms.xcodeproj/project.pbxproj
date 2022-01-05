@@ -15,6 +15,8 @@
 		5C506159275BC682009C5DA8 /* IsPalindrome.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C506157275BC682009C5DA8 /* IsPalindrome.c */; };
 		5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5422B72758FE070090F40B /* ReverseDataTable.c */; };
 		5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5422B72758FE070090F40B /* ReverseDataTable.c */; };
+		5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5515AB2785734A005F70DF /* CanBeValid.c */; };
+		5C5515AD2785734A005F70DF /* CanBeValid.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5515AB2785734A005F70DF /* CanBeValid.c */; };
 		5C7EC7A827564625006691F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7A727564625006691F0 /* main.m */; };
 		5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
 		5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
@@ -48,6 +50,9 @@
 		5C506157275BC682009C5DA8 /* IsPalindrome.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IsPalindrome.c; sourceTree = "<group>"; };
 		5C5422B62758FE070090F40B /* ReverseDataTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseDataTable.h; sourceTree = "<group>"; };
 		5C5422B72758FE070090F40B /* ReverseDataTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseDataTable.c; sourceTree = "<group>"; };
+		5C5515AA2785734A005F70DF /* CanBeValid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanBeValid.h; sourceTree = "<group>"; };
+		5C5515AB2785734A005F70DF /* CanBeValid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CanBeValid.c; sourceTree = "<group>"; };
+		5C5515AE278575AB005F70DF /* Snip20220105_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20220105_9.png; sourceTree = "<group>"; };
 		5C7EC7A427564625006691F0 /* DataStructureAndAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAndAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7EC7A727564625006691F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C7EC7AE275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetMaxLenthNotTheSameCharSubString.h; sourceTree = "<group>"; };
@@ -109,6 +114,16 @@
 			path = "反转单向链表";
 			sourceTree = "<group>";
 		};
+		5C5515A927857323005F70DF /* 判断一个括号字符串是否有效 */ = {
+			isa = PBXGroup;
+			children = (
+				5C5515AA2785734A005F70DF /* CanBeValid.h */,
+				5C5515AB2785734A005F70DF /* CanBeValid.c */,
+				5C5515AE278575AB005F70DF /* Snip20220105_9.png */,
+			);
+			path = "判断一个括号字符串是否有效";
+			sourceTree = "<group>";
+		};
 		5C7EC79B27564625006691F0 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5C5515A927857323005F70DF /* 判断一个括号字符串是否有效 */,
 				5CC264AE2784487C004B79D5 /* 最长连续递增序列 */,
 				5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */,
 				5CB1CF9E275F9CA3001CBF50 /* 求根节点到叶节点数字之和 */,
@@ -296,6 +312,7 @@
 				5C506159275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				422930BD2757198E00B4083C /* TestUnit.m in Sources */,
 				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
+				5C5515AD2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +329,7 @@
 				5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				5C7EC7A827564625006691F0 /* main.m in Sources */,
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
+				5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
