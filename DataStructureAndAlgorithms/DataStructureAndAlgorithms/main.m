@@ -148,9 +148,9 @@ int main(int argc, const char * argv[]) {
 //
 //    }
     {
-        int arr[] = {61,16,46,22,94,50,29,46,7,33};
+        int arr[] = {3,7,4,5,26,62,69,81,55,85,95,40,91,33,72,88,86};
         double startTime = CFAbsoluteTimeGetCurrent();
-        int result = minScoreTriangulation(arr, 10);
+        int result = minScoreTriangulation(arr, 4);
         
         double endTime = CFAbsoluteTimeGetCurrent();
         double time = endTime - startTime;
@@ -161,10 +161,10 @@ int main(int argc, const char * argv[]) {
 //    int arr[] = {61,16,46,22,94,50,29,46,7,33};
 //        findLengthOfLCIS(arr, 5);
 //    }
-    char* s = "))()))";
-    char*locked = "010100";
-    int result = canBeValid(s, locked);
-    NSLog(@"%d",result);
+//    char* s = "))()))";
+//    char*locked = "010100";
+//    int result = canBeValid(s, locked);
+//    NSLog(@"%d",result);
     return 0;
 }
 //
