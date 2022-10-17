@@ -24,6 +24,7 @@
 
 #include "FindLengthOfLCIS.h"
 #include "CanBeValid.h"
+#include "shootingmatch.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -147,20 +148,38 @@ int main(int argc, const char * argv[]) {
 //        freeNode(rootNode);
 //
 //    }
-    {
-        int arr[] = {3,7,4,5,26,62,69,81,55,85,95,40,91,33,72,88,86};
-        double startTime = CFAbsoluteTimeGetCurrent();
-        int result = minScoreTriangulation(arr, 4);
-        
-        double endTime = CFAbsoluteTimeGetCurrent();
-        double time = endTime - startTime;
-        NSLog(@"%f",time);
-        printf("%d\n",result);
-    }
+//    {
+//        int arr[] = {3,7,4,5,26,62,69,81,55,85,95,40,91,33,72,88,86};
+//        double startTime = CFAbsoluteTimeGetCurrent();
+//        int result = minScoreTriangulation(arr, 4);
+//
+//        double endTime = CFAbsoluteTimeGetCurrent();
+//        double time = endTime - startTime;
+//        NSLog(@"%f",time);
+//        printf("%d\n",result);
+//    }
 //    {
 //    int arr[] = {61,16,46,22,94,50,29,46,7,33};
 //        findLengthOfLCIS(arr, 5);
 //    }
+    
+    {
+        int count = 13;
+        int idArray[] = {3,3,7,4,4,4,4,7,7,3,5,5,5};
+        int scoreArray[] = {53,80,68,24,39,76,66,16,100,55,53,80,55};
+        int resultCount = 0;
+        int *result = getResultArray(count, idArray, scoreArray, &resultCount);
+        for (int i = 0; i < resultCount; i++) {
+            printf("%d",result[i]);
+            if (i == resultCount - 1) {
+                break;
+            }
+            printf(",");
+        }
+        printf("\n");
+    }
+    
+    
 //    char* s = "))()))";
 //    char*locked = "010100";
 //    int result = canBeValid(s, locked);

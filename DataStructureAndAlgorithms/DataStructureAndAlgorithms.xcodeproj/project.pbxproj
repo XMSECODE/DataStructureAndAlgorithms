@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		422930BD2757198E00B4083C /* TestUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 422930BC2757198E00B4083C /* TestUnit.m */; };
 		422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
+		42EE73DA28FD4895001DAB91 /* shootingmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 42EE73D928FD4895001DAB91 /* shootingmatch.c */; };
+		42EE73DB28FD4896001DAB91 /* shootingmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 42EE73D928FD4895001DAB91 /* shootingmatch.c */; };
 		5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C506157275BC682009C5DA8 /* IsPalindrome.c */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		422930BA2757198E00B4083C /* TestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422930BC2757198E00B4083C /* TestUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUnit.m; sourceTree = "<group>"; };
+		42EE73D828FD4895001DAB91 /* shootingmatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shootingmatch.h; sourceTree = "<group>"; };
+		42EE73D928FD4895001DAB91 /* shootingmatch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shootingmatch.c; sourceTree = "<group>"; };
 		5C1D4DC5275C63A40054BB0C /* MinTaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinTaps.h; sourceTree = "<group>"; };
 		5C1D4DC6275C63A40054BB0C /* MinTaps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinTaps.c; sourceTree = "<group>"; };
 		5C506156275BC682009C5DA8 /* IsPalindrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPalindrome.h; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 			path = TestUnit;
 			sourceTree = "<group>";
 		};
+		42EE73D728FD46E8001DAB91 /* 输出降序排名后的选手id序列 */ = {
+			isa = PBXGroup;
+			children = (
+				42EE73D828FD4895001DAB91 /* shootingmatch.h */,
+				42EE73D928FD4895001DAB91 /* shootingmatch.c */,
+			);
+			path = "输出降序排名后的选手id序列";
+			sourceTree = "<group>";
+		};
 		5C506155275BC666009C5DA8 /* 验证回文串 */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				42EE73D728FD46E8001DAB91 /* 输出降序排名后的选手id序列 */,
 				5C5515A927857323005F70DF /* 判断一个括号字符串是否有效 */,
 				5CC264AE2784487C004B79D5 /* 最长连续递增序列 */,
 				5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */,
@@ -314,6 +328,7 @@
 				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5515AD2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */,
+				42EE73DB28FD4896001DAB91 /* shootingmatch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +346,7 @@
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,
+				42EE73DA28FD4895001DAB91 /* shootingmatch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5BVK59226;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -502,7 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5BVK59226;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
