@@ -6,7 +6,7 @@
 //
 
 #include "CanBeValid.h"
-#include <String.h>
+#include "string.h"
 #include <mm_malloc.h>
 
 int canBeValid(char * s, char * locked){

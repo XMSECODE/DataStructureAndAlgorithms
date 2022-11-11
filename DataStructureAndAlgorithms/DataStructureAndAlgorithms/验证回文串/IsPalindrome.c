@@ -6,7 +6,7 @@
 //
 
 #include "IsPalindrome.h"
-#include <String.h>
+#include "string.h"
 
 int isPalindrome(char * s) {
     if (s == NULL) {

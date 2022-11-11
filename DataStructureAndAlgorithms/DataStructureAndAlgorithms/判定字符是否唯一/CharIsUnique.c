@@ -6,7 +6,7 @@
 //
 
 #include "CharIsUnique.h"
-#include <String.h>
+#include "string.h"
 
 int isUnique(char *astr) {
     int l = (int)strlen(astr);
