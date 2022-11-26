@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4204F7852901410F004FC57C /* Password.c in Sources */ = {isa = PBXBuildFile; fileRef = 4204F7842901410F004FC57C /* Password.c */; };
+		4204F7862901410F004FC57C /* Password.c in Sources */ = {isa = PBXBuildFile; fileRef = 4204F7842901410F004FC57C /* Password.c */; };
 		422930BD2757198E00B4083C /* TestUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 422930BC2757198E00B4083C /* TestUnit.m */; };
 		422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
+		422A463A290128CC003F9597 /* Get1NumberCount.c in Sources */ = {isa = PBXBuildFile; fileRef = 422A4639290128CC003F9597 /* Get1NumberCount.c */; };
+		422A463B290128CC003F9597 /* Get1NumberCount.c in Sources */ = {isa = PBXBuildFile; fileRef = 422A4639290128CC003F9597 /* Get1NumberCount.c */; };
+		4287453F290B787E008677BC /* SortString.c in Sources */ = {isa = PBXBuildFile; fileRef = 4287453E290B787E008677BC /* SortString.c */; };
+		42874540290B787E008677BC /* SortString.c in Sources */ = {isa = PBXBuildFile; fileRef = 4287453E290B787E008677BC /* SortString.c */; };
+		42BB3E04291E3EC700E5CCAC /* IntAndIP.c in Sources */ = {isa = PBXBuildFile; fileRef = 42BB3E03291E3EC700E5CCAC /* IntAndIP.c */; };
+		42EE73DA28FD4895001DAB91 /* shootingmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 42EE73D928FD4895001DAB91 /* shootingmatch.c */; };
+		42EE73DB28FD4896001DAB91 /* shootingmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 42EE73D928FD4895001DAB91 /* shootingmatch.c */; };
+		42F2EFD028FE3D4E00AF2438 /* shoppinglist.c in Sources */ = {isa = PBXBuildFile; fileRef = 42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */; };
+		42F2EFD128FE3D4E00AF2438 /* shoppinglist.c in Sources */ = {isa = PBXBuildFile; fileRef = 42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */; };
 		5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C506157275BC682009C5DA8 /* IsPalindrome.c */; };
@@ -44,8 +55,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4204F7832901410F004FC57C /* Password.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Password.h; sourceTree = "<group>"; };
+		4204F7842901410F004FC57C /* Password.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Password.c; sourceTree = "<group>"; };
 		422930BA2757198E00B4083C /* TestUnit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUnit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422930BC2757198E00B4083C /* TestUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUnit.m; sourceTree = "<group>"; };
+		422A4638290128CC003F9597 /* Get1NumberCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Get1NumberCount.h; sourceTree = "<group>"; };
+		422A4639290128CC003F9597 /* Get1NumberCount.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Get1NumberCount.c; sourceTree = "<group>"; };
+		4287453D290B787E008677BC /* SortString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortString.h; sourceTree = "<group>"; };
+		4287453E290B787E008677BC /* SortString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortString.c; sourceTree = "<group>"; };
+		42BB3E02291E3EC700E5CCAC /* IntAndIP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntAndIP.h; sourceTree = "<group>"; };
+		42BB3E03291E3EC700E5CCAC /* IntAndIP.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = IntAndIP.c; sourceTree = "<group>"; };
+		42EE73D828FD4895001DAB91 /* shootingmatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shootingmatch.h; sourceTree = "<group>"; };
+		42EE73D928FD4895001DAB91 /* shootingmatch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shootingmatch.c; sourceTree = "<group>"; };
+		42F2EFCE28FE3D4E00AF2438 /* shoppinglist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shoppinglist.h; sourceTree = "<group>"; };
+		42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shoppinglist.c; sourceTree = "<group>"; };
 		5C1D4DC5275C63A40054BB0C /* MinTaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinTaps.h; sourceTree = "<group>"; };
 		5C1D4DC6275C63A40054BB0C /* MinTaps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinTaps.c; sourceTree = "<group>"; };
 		5C506156275BC682009C5DA8 /* IsPalindrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsPalindrome.h; sourceTree = "<group>"; };
@@ -92,12 +115,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4204F782290140F2004FC57C /* 密码验证合格程序 */ = {
+			isa = PBXGroup;
+			children = (
+				4204F7832901410F004FC57C /* Password.h */,
+				4204F7842901410F004FC57C /* Password.c */,
+			);
+			path = "密码验证合格程序";
+			sourceTree = "<group>";
+		};
 		422930BB2757198E00B4083C /* TestUnit */ = {
 			isa = PBXGroup;
 			children = (
 				422930BC2757198E00B4083C /* TestUnit.m */,
 			);
 			path = TestUnit;
+			sourceTree = "<group>";
+		};
+		422A463729012895003F9597 /* 求int型正整数在内存中存储时1的个数 */ = {
+			isa = PBXGroup;
+			children = (
+				422A4638290128CC003F9597 /* Get1NumberCount.h */,
+				422A4639290128CC003F9597 /* Get1NumberCount.c */,
+			);
+			path = "求int型正整数在内存中存储时1的个数";
+			sourceTree = "<group>";
+		};
+		4287453C290B7866008677BC /* 字符串排序 */ = {
+			isa = PBXGroup;
+			children = (
+				4287453D290B787E008677BC /* SortString.h */,
+				4287453E290B787E008677BC /* SortString.c */,
+			);
+			path = "字符串排序";
+			sourceTree = "<group>";
+		};
+		42BB3E01291E3EA600E5CCAC /* 整数与IP地址间的转换 */ = {
+			isa = PBXGroup;
+			children = (
+				42BB3E02291E3EC700E5CCAC /* IntAndIP.h */,
+				42BB3E03291E3EC700E5CCAC /* IntAndIP.c */,
+			);
+			path = "整数与IP地址间的转换";
+			sourceTree = "<group>";
+		};
+		42EE73D728FD46E8001DAB91 /* 输出降序排名后的选手id序列 */ = {
+			isa = PBXGroup;
+			children = (
+				42EE73D828FD4895001DAB91 /* shootingmatch.h */,
+				42EE73D928FD4895001DAB91 /* shootingmatch.c */,
+			);
+			path = "输出降序排名后的选手id序列";
+			sourceTree = "<group>";
+		};
+		42F2EFCD28FE3D0D00AF2438 /* 最满意购物单 */ = {
+			isa = PBXGroup;
+			children = (
+				42F2EFCE28FE3D4E00AF2438 /* shoppinglist.h */,
+				42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */,
+			);
+			path = "最满意购物单";
 			sourceTree = "<group>";
 		};
 		5C506155275BC666009C5DA8 /* 验证回文串 */ = {
@@ -151,6 +228,12 @@
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
 				5CA38CB6278D63A700E7CEE6 /* 参加考试的最大学生数 */,
+				42BB3E01291E3EA600E5CCAC /* 整数与IP地址间的转换 */,
+				4287453C290B7866008677BC /* 字符串排序 */,
+				4204F782290140F2004FC57C /* 密码验证合格程序 */,
+				422A463729012895003F9597 /* 求int型正整数在内存中存储时1的个数 */,
+				42F2EFCD28FE3D0D00AF2438 /* 最满意购物单 */,
+				42EE73D728FD46E8001DAB91 /* 输出降序排名后的选手id序列 */,
 				5C5515A927857323005F70DF /* 判断一个括号字符串是否有效 */,
 				5CC264AE2784487C004B79D5 /* 最长连续递增序列 */,
 				5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */,
@@ -320,15 +403,20 @@
 			files = (
 				5CC264B2278448A3004B79D5 /* FindLengthOfLCIS.c in Sources */,
 				5CA810A12760E47C009474DC /* SumNumbers.c in Sources */,
+				4204F7862901410F004FC57C /* Password.c in Sources */,
 				5CFD390527622989000F5F6A /* MinScoreTriangulation.c in Sources */,
+				42F2EFD128FE3D4E00AF2438 /* shoppinglist.c in Sources */,
 				5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */,
 				5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
 				5C506159275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				422930BD2757198E00B4083C /* TestUnit.m in Sources */,
 				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
+				422A463B290128CC003F9597 /* Get1NumberCount.c in Sources */,
 				5C5515AD2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */,
 				5CC51E2F278EA38D00DB2999 /* MaxStudents.c in Sources */,
+				42874540290B787E008677BC /* SortString.c in Sources */,
+				42EE73DB28FD4896001DAB91 /* shootingmatch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,15 +426,21 @@
 			files = (
 				5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */,
 				5CA810A02760E47C009474DC /* SumNumbers.c in Sources */,
+				42BB3E04291E3EC700E5CCAC /* IntAndIP.c in Sources */,
+				4204F7852901410F004FC57C /* Password.c in Sources */,
 				5CFD390427622989000F5F6A /* MinScoreTriangulation.c in Sources */,
+				42F2EFD028FE3D4E00AF2438 /* shoppinglist.c in Sources */,
 				5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */,
 				5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
 				5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				5C7EC7A827564625006691F0 /* main.m in Sources */,
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
+				422A463A290128CC003F9597 /* Get1NumberCount.c in Sources */,
 				5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,
 				5CA38CB9278D63C100E7CEE6 /* MaxStudents.c in Sources */,
+				4287453F290B787E008677BC /* SortString.c in Sources */,
+				42EE73DA28FD4895001DAB91 /* shootingmatch.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5BVK59226;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -518,7 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = S5BVK59226;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -6,7 +6,7 @@
 //
 
 #include "GetMaxLenthNotTheSameCharSubString.h"
-#include <String.h>
+#include "string.h"
 
 int maxLenthInTheString(char *chars) {
     

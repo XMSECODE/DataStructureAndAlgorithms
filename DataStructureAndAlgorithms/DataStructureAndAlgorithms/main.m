@@ -24,7 +24,14 @@
 
 #include "FindLengthOfLCIS.h"
 #include "CanBeValid.h"
+
 #include "MaxStudents.h"
+
+#include "shootingmatch.h"
+#include "shoppinglist.h"
+#include "Get1NumberCount.h"
+#include "IntAndIP.h"
+
 
 
 int main(int argc, const char * argv[]) {
@@ -162,6 +169,35 @@ int main(int argc, const char * argv[]) {
 //    int arr[] = {61,16,46,22,94,50,29,46,7,33};
 //        findLengthOfLCIS(arr, 5);
 //    }
+    
+//    {
+//        int count = 13;
+//        int idArray[] = {3,3,7,4,4,4,4,7,7,3,5,5,5};
+//        int scoreArray[] = {53,80,68,24,39,76,66,16,100,55,53,80,55};
+//        int resultCount = 0;
+//        int *result = getResultArray(count, idArray, scoreArray, &resultCount);
+//        for (int i = 0; i < resultCount; i++) {
+//            printf("%d",result[i]);
+//            if (i == resultCount - 1) {
+//                break;
+//            }
+//            printf(",");
+//        }
+//        printf("\n");
+//    }
+    
+//    {
+//        int result = getMaxShoppingList();
+//        printf("%d\n",result);
+//    }
+//    {
+//        get1NumberCount();
+//    }
+    {
+        ipToInt();
+    }
+    
+    
 //    char* s = "))()))";
 //    char*locked = "010100";
 //    int result = canBeValid(s, locked);
