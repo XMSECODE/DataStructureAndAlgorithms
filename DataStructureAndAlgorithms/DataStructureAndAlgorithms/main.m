@@ -32,6 +32,7 @@
 #include "Get1NumberCount.h"
 #include "IntAndIP.h"
 
+#include "StringEncode.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -208,96 +209,96 @@ int main(int argc, const char * argv[]) {
      '.'    ,'#'    ,'#'    ,'#'    ,'#'    ,'.',
      '#'    ,'.'    ,'#'    ,'#'    ,'.'    ,'#'
      */
-    {
-        {
-            
-            char sears[] = {'#','.','#','#','.','#','.','#','#','#','#','.','#','.','#','#','.','#'};
-            int seatsColSize[] = {6,6,6};
-            char **s = malloc(sizeof(char *) * 3);
-            for (int i = 0; i < 3; i++) {
-                int count = seatsColSize[i];
-                char *subs = malloc(sizeof(char) * count);
-                s[i] = subs;
-                for (int j = 0; j < count; j++) {
-                    char c = sears[i * count + j];
-                    subs[j] = c;
-                }
-            }
-            int l = maxStudents(s, 3, seatsColSize);
-            NSLog(@"%d",l);
-        }
-        
-        {
-          //[["#","#","#",".","#"],[".",".","#",".","."],["#",".","#",".","#"],[".",".",".",".","."],[".",".",".","#","."]]
-            char sears[] = {'#','#','#','.','#','.','.','#','.','.','#','.','#','.','#','.','.','.','.','.','.','.','.','#','.'};
-            int seatsColSize[] = {5,5,5,5,5};
-            char **s = malloc(sizeof(char *) * 5);
-            for (int i = 0; i < 5; i++) {
-                int count = seatsColSize[i];
-                char *subs = malloc(sizeof(char) * count);
-                s[i] = subs;
-                for (int j = 0; j < count; j++) {
-                    char c = sears[i * count + j];
-                    subs[j] = c;
-                }
-            }
-            {
-                double startTime = CFAbsoluteTimeGetCurrent();
-                int l = maxStudents2(s, 5, seatsColSize);
-                printf("\n");
-                NSLog(@"%d",l);
-                double endTime = CFAbsoluteTimeGetCurrent();
-                double time = endTime - startTime;
-                NSLog(@"2==%f",time);
-            }
-
-            {
-                double startTime = CFAbsoluteTimeGetCurrent();
-                int l = maxStudents(s, 5, seatsColSize);
-                NSLog(@"%d",l);
-                double endTime = CFAbsoluteTimeGetCurrent();
-                double time = endTime - startTime;
-                NSLog(@"1==%f",time);
-            }
-        }
-        
-        {
-    //        [[".","#","#",".","#","#","#"],[".","#","#",".",".",".","."],["#","#",".",".","#","#","#"],[".",".",".","#","#",".","."],[".","#","#",".",".",".","#"],[".",".",".",".",".","#","."]]
-            
-            char sears[] = {'.','#','#','.','#','#','#','.','#','#','.','.','.','.','#','#','.','.','#','#','#','.','.','.','#','#','.','.','.','#','#','.','.','.','#','.','.','.','.','.','#','.'};
-            int seatsColSize[] = {7,7,7,7,7,7};
-            char **s = malloc(sizeof(char *) * 6);
-            for (int i = 0; i < 6; i++) {
-                int count = seatsColSize[i];
-                char *subs = malloc(sizeof(char) * count);
-                s[i] = subs;
-                for (int j = 0; j < count; j++) {
-                    char c = sears[i * count + j];
-                    subs[j] = c;
-                }
-            }
-            {
-                double startTime = CFAbsoluteTimeGetCurrent();
-                int l = maxStudents(s, 6, seatsColSize);
-                NSLog(@"%d",l);
-                double endTime = CFAbsoluteTimeGetCurrent();
-                double time = endTime - startTime;
-                NSLog(@"1==%f",time);
-            }
-            
-            double startTime = CFAbsoluteTimeGetCurrent();
-            int l = maxStudents2(s, 6, seatsColSize);
-            NSLog(@"%d",l);
-            double endTime = CFAbsoluteTimeGetCurrent();
-            double time = endTime - startTime;
-            NSLog(@"2==%f",time);
-            
-           
-            
-        }
-        
-    }
-    
+//    {
+//        {
+//            
+//            char sears[] = {'#','.','#','#','.','#','.','#','#','#','#','.','#','.','#','#','.','#'};
+//            int seatsColSize[] = {6,6,6};
+//            char **s = malloc(sizeof(char *) * 3);
+//            for (int i = 0; i < 3; i++) {
+//                int count = seatsColSize[i];
+//                char *subs = malloc(sizeof(char) * count);
+//                s[i] = subs;
+//                for (int j = 0; j < count; j++) {
+//                    char c = sears[i * count + j];
+//                    subs[j] = c;
+//                }
+//            }
+//            int l = maxStudents(s, 3, seatsColSize);
+//            NSLog(@"%d",l);
+//        }
+//        
+//        {
+//          //[["#","#","#",".","#"],[".",".","#",".","."],["#",".","#",".","#"],[".",".",".",".","."],[".",".",".","#","."]]
+//            char sears[] = {'#','#','#','.','#','.','.','#','.','.','#','.','#','.','#','.','.','.','.','.','.','.','.','#','.'};
+//            int seatsColSize[] = {5,5,5,5,5};
+//            char **s = malloc(sizeof(char *) * 5);
+//            for (int i = 0; i < 5; i++) {
+//                int count = seatsColSize[i];
+//                char *subs = malloc(sizeof(char) * count);
+//                s[i] = subs;
+//                for (int j = 0; j < count; j++) {
+//                    char c = sears[i * count + j];
+//                    subs[j] = c;
+//                }
+//            }
+//            {
+//                double startTime = CFAbsoluteTimeGetCurrent();
+//                int l = maxStudents2(s, 5, seatsColSize);
+//                printf("\n");
+//                NSLog(@"%d",l);
+//                double endTime = CFAbsoluteTimeGetCurrent();
+//                double time = endTime - startTime;
+//                NSLog(@"2==%f",time);
+//            }
+//
+//            {
+//                double startTime = CFAbsoluteTimeGetCurrent();
+//                int l = maxStudents(s, 5, seatsColSize);
+//                NSLog(@"%d",l);
+//                double endTime = CFAbsoluteTimeGetCurrent();
+//                double time = endTime - startTime;
+//                NSLog(@"1==%f",time);
+//            }
+//        }
+//        
+//        {
+//    //        [[".","#","#",".","#","#","#"],[".","#","#",".",".",".","."],["#","#",".",".","#","#","#"],[".",".",".","#","#",".","."],[".","#","#",".",".",".","#"],[".",".",".",".",".","#","."]]
+//            
+//            char sears[] = {'.','#','#','.','#','#','#','.','#','#','.','.','.','.','#','#','.','.','#','#','#','.','.','.','#','#','.','.','.','#','#','.','.','.','#','.','.','.','.','.','#','.'};
+//            int seatsColSize[] = {7,7,7,7,7,7};
+//            char **s = malloc(sizeof(char *) * 6);
+//            for (int i = 0; i < 6; i++) {
+//                int count = seatsColSize[i];
+//                char *subs = malloc(sizeof(char) * count);
+//                s[i] = subs;
+//                for (int j = 0; j < count; j++) {
+//                    char c = sears[i * count + j];
+//                    subs[j] = c;
+//                }
+//            }
+//            {
+//                double startTime = CFAbsoluteTimeGetCurrent();
+//                int l = maxStudents(s, 6, seatsColSize);
+//                NSLog(@"%d",l);
+//                double endTime = CFAbsoluteTimeGetCurrent();
+//                double time = endTime - startTime;
+//                NSLog(@"1==%f",time);
+//            }
+//            
+//            double startTime = CFAbsoluteTimeGetCurrent();
+//            int l = maxStudents2(s, 6, seatsColSize);
+//            NSLog(@"%d",l);
+//            double endTime = CFAbsoluteTimeGetCurrent();
+//            double time = endTime - startTime;
+//            NSLog(@"2==%f",time);
+//            
+//           
+//            
+//        }
+//        
+//    }
+    Stringcode();
    
     
     return 0;
