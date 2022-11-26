@@ -21,10 +21,12 @@
 		5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
 		5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
 		5C8D5E78275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
+		5CA38CB9278D63C100E7CEE6 /* MaxStudents.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA38CB8278D63C100E7CEE6 /* MaxStudents.c */; };
 		5CA810A02760E47C009474DC /* SumNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8109F2760E47C009474DC /* SumNumbers.c */; };
 		5CA810A12760E47C009474DC /* SumNumbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA8109F2760E47C009474DC /* SumNumbers.c */; };
 		5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */; };
 		5CC264B2278448A3004B79D5 /* FindLengthOfLCIS.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */; };
+		5CC51E2F278EA38D00DB2999 /* MaxStudents.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA38CB8278D63C100E7CEE6 /* MaxStudents.c */; };
 		5CFD390427622989000F5F6A /* MinScoreTriangulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD390327622989000F5F6A /* MinScoreTriangulation.c */; };
 		5CFD390527622989000F5F6A /* MinScoreTriangulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD390327622989000F5F6A /* MinScoreTriangulation.c */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GetMaxLenthNotTheSameCharSubString.c; sourceTree = "<group>"; };
 		5C8D5E75275AF9D5000DDA97 /* CharIsUnique.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharIsUnique.h; sourceTree = "<group>"; };
 		5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CharIsUnique.c; sourceTree = "<group>"; };
+		5CA38CB7278D63C100E7CEE6 /* MaxStudents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxStudents.h; sourceTree = "<group>"; };
+		5CA38CB8278D63C100E7CEE6 /* MaxStudents.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaxStudents.c; sourceTree = "<group>"; };
 		5CA8109E2760E47C009474DC /* SumNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SumNumbers.h; sourceTree = "<group>"; };
 		5CA8109F2760E47C009474DC /* SumNumbers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SumNumbers.c; sourceTree = "<group>"; };
 		5CA810A22760E50C009474DC /* Snip20211208_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20211208_7.png; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5CA38CB6278D63A700E7CEE6 /* 参加考试的最大学生数 */,
 				5C5515A927857323005F70DF /* 判断一个括号字符串是否有效 */,
 				5CC264AE2784487C004B79D5 /* 最长连续递增序列 */,
 				5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */,
@@ -175,6 +180,15 @@
 				5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */,
 			);
 			path = "判定字符是否唯一";
+			sourceTree = "<group>";
+		};
+		5CA38CB6278D63A700E7CEE6 /* 参加考试的最大学生数 */ = {
+			isa = PBXGroup;
+			children = (
+				5CA38CB7278D63C100E7CEE6 /* MaxStudents.h */,
+				5CA38CB8278D63C100E7CEE6 /* MaxStudents.c */,
+			);
+			path = "参加考试的最大学生数";
 			sourceTree = "<group>";
 		};
 		5CB1CF9E275F9CA3001CBF50 /* 求根节点到叶节点数字之和 */ = {
@@ -314,6 +328,7 @@
 				422930C127571B3700B4083C /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5515AD2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B92758FE070090F40B /* ReverseDataTable.c in Sources */,
+				5CC51E2F278EA38D00DB2999 /* MaxStudents.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +346,7 @@
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
 				5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,
+				5CA38CB9278D63C100E7CEE6 /* MaxStudents.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 #include "MinTaps.h"
 #include "SumNumbers.h"
 #include "CanBeValid.h"
+#include "MaxStudents.h"
 
 
 @interface TestUnit : XCTestCase
@@ -28,7 +29,7 @@
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
-
+    
 }
 
 ///求字符串中不包含重复字符的最大子字符串长度
@@ -44,7 +45,7 @@
         XCTAssertEqual(maxLenthInTheString(testChars), resultL);
     }
     
-
+    
 }
 ///反转单向链表
 - (void)testDemo2 {
@@ -58,7 +59,7 @@
     XCTAssertEqual(resultData->data, a);
     
     XCTAssertEqual(reverseDataTalbe(NULL), NULL);
-
+    
     
     Data *firstData;
     Data *olddata = NULL;
@@ -113,7 +114,7 @@
     XCTAssertEqual(result, 0);
     result = isPalindrome("0P");
     XCTAssertEqual(result, 0);
-
+    
 }
 
 - (void)testDemo5 {
@@ -187,7 +188,7 @@
     locked = "100011110110011011010111100111011101111110000101001101001111";
     result = canBeValid(s, locked);
     XCTAssertEqual(result, 0);
-
+    
     s = ")(";
     locked = "00";
     result = canBeValid(s, locked);
@@ -204,6 +205,95 @@
     XCTAssertEqual(result, 0);
     
     
+    
+}
+
+- (void)testDemo8 {
+    {
+        
+        char sears[] = {'#','.','#','#','.','#','.','#','#','#','#','.','#','.','#','#','.','#'};
+        int seatsColSize[] = {6,6,6};
+        char **s = malloc(sizeof(char *) * 3);
+        for (int i = 0; i < 3; i++) {
+            int count = seatsColSize[i];
+            char *subs = malloc(sizeof(char) * count);
+            s[i] = subs;
+            for (int j = 0; j < count; j++) {
+                char c = sears[i * count + j];
+                subs[j] = c;
+            }
+        }
+        int l = maxStudents(s, 3, seatsColSize);
+        XCTAssertEqual(l, 4);
+    }
+    
+    {
+      //[["#","#","#",".","#"],[".",".","#",".","."],["#",".","#",".","#"],[".",".",".",".","."],[".",".",".","#","."]]
+        char sears[] = {'#','#','#','.','#','.','.','#','.','.','#','.','#','.','#','.','.','.','.','.','.','.','.','#','.'};
+        int seatsColSize[] = {5,5,5,5,5};
+        char **s = malloc(sizeof(char *) * 5);
+        for (int i = 0; i < 5; i++) {
+            int count = seatsColSize[i];
+            char *subs = malloc(sizeof(char) * count);
+            s[i] = subs;
+            for (int j = 0; j < count; j++) {
+                char c = sears[i * count + j];
+                subs[j] = c;
+            }
+        }
+        {
+            double startTime = CFAbsoluteTimeGetCurrent();
+            int l = maxStudents2(s, 5, seatsColSize);
+            XCTAssertEqual(l,9);
+            double endTime = CFAbsoluteTimeGetCurrent();
+            double time = endTime - startTime;
+            NSLog(@"2==%f",time);
+        }
+
+        {
+            double startTime = CFAbsoluteTimeGetCurrent();
+            int l = maxStudents(s, 5, seatsColSize);
+            XCTAssertEqual(l,9);
+            double endTime = CFAbsoluteTimeGetCurrent();
+            double time = endTime - startTime;
+            NSLog(@"1==%f",time);
+        }
+    }
+    
+    {
+//        [[".","#","#",".","#","#","#"],[".","#","#",".",".",".","."],["#","#",".",".","#","#","#"],[".",".",".","#","#",".","."],[".","#","#",".",".",".","#"],[".",".",".",".",".","#","."]]
+        
+        char sears[] = {'.','#','#','.','#','#','#','.','#','#','.','.','.','.','#','#','.','.','#','#','#','.','.','.','#','#','.','.','.','#','#','.','.','.','#','.','.','.','.','.','#','.'};
+        int seatsColSize[] = {7,7,7,7,7,7};
+        char **s = malloc(sizeof(char *) * 6);
+        for (int i = 0; i < 6; i++) {
+            int count = seatsColSize[i];
+            char *subs = malloc(sizeof(char) * count);
+            s[i] = subs;
+            for (int j = 0; j < count; j++) {
+                char c = sears[i * count + j];
+                subs[j] = c;
+            }
+        }
+        {
+            double startTime = CFAbsoluteTimeGetCurrent();
+            int l = maxStudents(s, 6, seatsColSize);
+            XCTAssertEqual(l,14);
+            double endTime = CFAbsoluteTimeGetCurrent();
+            double time = endTime - startTime;
+            NSLog(@"1==%f",time);
+        }
+        
+        double startTime = CFAbsoluteTimeGetCurrent();
+        int l = maxStudents2(s, 6, seatsColSize);
+        XCTAssertEqual(l,14);
+        double endTime = CFAbsoluteTimeGetCurrent();
+        double time = endTime - startTime;
+        NSLog(@"2==%f",time);
+        
+       
+        
+    }
     
 }
 
