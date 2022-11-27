@@ -7,47 +7,142 @@
 
 #include "MaxStudents.h"
 #include <mm_malloc.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <math.h>
+#include <limits.h>
 
 int change(char** seats, int seatsSize, int* seatsColSize,int count);
 
 //[["#","#","#",".","#"],[".",".","#",".","."],["#",".","#",".","#"],[".",".",".",".","."],[".",".",".","#","."]]
 
-int maxStudents(char** seats, int seatsSize, int* seatsColSize) {
-    
-//    int currentSize = 0;
-//    int currentResultArray = malloc(256);
-//    int currentStateArray = malloc(256 * seatsColSize[0]);
-//    
-//    
-//    int colsize = seatsColSize[0];
-//    
-//    for (int i = seatsSize - 1; i >= 0; i++) {
-//        if(i == seatsSize - 1) {
-//            //第一排计算多少种可能
-//            char *cs = seats[i * colsize];
-//            int restlucount = 1;
-//            for (int j = 0; j < seatsColSize[i]; j++) {
-//                char c = cs[j];
-//                if(c == '.'){
-//                    restlucount = restlucount * 2;
-//                }
-//            }
-//            for(int i = 0;i < restlucount;i++) {
-//                
-//                for(int j = 0;j < colsize; j++) {
-//                    
-//                }
-//            }
-//        }
-//    }
-    
-    
-    
-   
-    
-    
-    return 0;
+
+
+#define MMAX(a, b)        ((a) > (b)? (a) : (b))
+#define MAX_LEN 8
+
+
+int flag[MAX_LEN][MAX_LEN];
+int row, col;
+
+//后面的个数取决于当前进入时前面的pattern
+// |      p p p p p |
+// |p p p p x       |
+int memo[MAX_LEN][MAX_LEN][512];
+
+bool check(char **seats, int y, int x) {
+/*
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < col; j++) {
+            printf("%d  ", flag[i][j]);
+        }
+        printf("\n");
+    }
+*/
+    if( flag[y][x] == 2 ||
+        (x > 0 && flag[y][x - 1] == 1) ||
+        (x > 0 && y > 0 && flag[y - 1][x - 1] == 1) ||
+        (x < col - 1 && y > 0 && flag[y - 1][x + 1] == 1)
+        ) {
+        //printf("[%d, %d], false\n", y, x);
+        return false;
+    } else {
+        //printf("[%d, %d], true\n", y, x);
+        return true;
+    }
 }
+
+int get_pattern(char **seats, int y, int x) {
+    int pattern = 0;
+    for(int i = 0; i < x; i++) {
+        if(flag[y][i] == 1) {
+            pattern |= 1 << i;
+        }
+    }
+
+    if(y == 0) {
+        goto DONE;
+    }
+
+    for(int i = x; i < col; i++) {
+        if(flag[y - 1][i] == 1) {
+            pattern |= 1 << i;
+        }
+    }
+    
+    if(x > 0 && flag[y - 1][x - 1] == 1) {
+        pattern |= 1 << col;
+    }
+
+DONE:
+/*
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < col; j++) {
+            printf("%d  ", flag[i][j]);
+        }
+        printf("\n");
+    }
+*/
+    //printf("pattern[%d, %d] = %d\n", y, x, pattern);
+
+    return pattern;
+}
+
+int helper(char **seats, int y, int x) {
+    if(y == row - 1 && x == col - 1) {
+        int ret = check(seats, y, x) == true? 1 : 0;
+        //printf("----max = %d\n", max);
+        return ret;
+    }
+
+    //加速
+    int p = get_pattern(seats, y, x);
+    if(memo[y][x][p] != 0) {
+        //printf("[%d, %d](%d)\n", y, x, memo[y][x][p] - 1);
+        return memo[y][x][p] - 1;
+    }
+
+    int ret = 0;
+    int ny = x + 1 == col? y + 1 : y;
+    int nx = x + 1 == col? 0 : x + 1;
+
+    if(check(seats, y, x) == true) {
+        //占用
+        flag[y][x] = 1;
+        ret = helper(seats, ny, nx) + 1;
+        flag[y][x] = 0;
+    }
+
+    //不占用
+    ret = MMAX(ret, helper(seats, ny, nx));
+
+    memo[y][x][p] = ret + 1;
+    
+    return ret;
+}
+
+
+
+int maxStudents(char** seats, int seatsSize, int* seatsColSize) {
+    row = seatsSize;
+    col = seatsColSize[0];
+
+    for(int i = 0; i < row; i++) {
+        for(int j = 0; j < col; j++) {
+            flag[i][j] = seats[i][j] == '#'? 2 : 0;
+
+            for(int k = 0; k < 512; k++) {
+                memo[i][j][k] = 0;
+            }
+        }
+    }
+
+    int ret = helper(seats, 0, 0);
+
+    return ret;
+}
+
 
 
 int isOk(int *array1,int *array2,int size){
@@ -57,7 +152,7 @@ int isOk(int *array1,int *array2,int size){
             char ci = array2[i];
             char ci1 = array2[i + 1];
             if(ci == '.' && ci1 == '.') {
-                return 0;
+                return -1;
             }
         }
     }else {

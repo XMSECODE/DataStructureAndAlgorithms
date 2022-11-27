@@ -33,6 +33,7 @@
 #include "IntAndIP.h"
 
 #include "StringEncode.h"
+#import "eightQuee.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -195,7 +196,7 @@ int main(int argc, const char * argv[]) {
 //        get1NumberCount();
 //    }
     {
-        ipToInt();
+//        ipToInt();
     }
     
     
@@ -298,8 +299,9 @@ int main(int argc, const char * argv[]) {
 //        }
 //        
 //    }
-    Stringcode();
+//    Stringcode();
    
+    eightQuee();
     
     return 0;
 }
