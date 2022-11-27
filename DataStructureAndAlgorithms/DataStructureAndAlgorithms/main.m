@@ -34,6 +34,7 @@
 
 #include "StringEncode.h"
 #import "eightQuee.h"
+#include "StringMerge.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -265,7 +266,7 @@ int main(int argc, const char * argv[]) {
 //        
 //        {
 //    //        [[".","#","#",".","#","#","#"],[".","#","#",".",".",".","."],["#","#",".",".","#","#","#"],[".",".",".","#","#",".","."],[".","#","#",".",".",".","#"],[".",".",".",".",".","#","."]]
-//            
+//
 //            char sears[] = {'.','#','#','.','#','#','#','.','#','#','.','.','.','.','#','#','.','.','#','#','#','.','.','.','#','#','.','.','.','#','#','.','.','.','#','.','.','.','.','.','#','.'};
 //            int seatsColSize[] = {7,7,7,7,7,7};
 //            char **s = malloc(sizeof(char *) * 6);
@@ -286,22 +287,23 @@ int main(int argc, const char * argv[]) {
 //                double time = endTime - startTime;
 //                NSLog(@"1==%f",time);
 //            }
-//            
+//
 //            double startTime = CFAbsoluteTimeGetCurrent();
 //            int l = maxStudents2(s, 6, seatsColSize);
 //            NSLog(@"%d",l);
 //            double endTime = CFAbsoluteTimeGetCurrent();
 //            double time = endTime - startTime;
 //            NSLog(@"2==%f",time);
-//            
-//           
-//            
+//
+//
+//
 //        }
 //        
 //    }
 //    Stringcode();
    
-    eightQuee();
+//    eightQuee();
+    StringMerge();
     
     return 0;
 }

@@ -76,14 +76,15 @@ int get_pattern(char **seats, int y, int x) {
     }
 
 DONE:
-/*
+
     for(int i = 0; i < row; i++) {
         for(int j = 0; j < col; j++) {
             printf("%d  ", flag[i][j]);
         }
         printf("\n");
     }
-*/
+    printf("\n");
+
     //printf("pattern[%d, %d] = %d\n", y, x, pattern);
 
     return pattern;
@@ -143,6 +144,84 @@ int maxStudents(char** seats, int seatsSize, int* seatsColSize) {
     return ret;
 }
 
+int maxStudents2(char** seats, int seatsSize, int* seatsColSize) {
+    int col = seatsColSize[0];
+    
+    int maxResult = 0;
+    int temResult = 0;
+    int memo[8][8][2];
+    for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+            for (int k = 0; k < 2; k++) {
+                memo[i][j][k] = 0;
+            }
+        }
+    }
+    
+    
+    for (int x = 0; x < col; x++) {
+        for (int y = seatsSize - 1;y > 0; y--) {
+            char cxy = seats[y][x];
+            if(cxy == '#'){
+                continue;
+            }
+            memo[y][x][0] = temResult;
+            if(temResult > maxResult) {
+                maxResult = temResult;
+            }
+            if(x > 0){
+                if(y > 0) {
+                    if(x < col - 1){
+                        //不是最后一行
+                        char cxy1 = seats[y][x - 1];
+                        char cxy2 = seats[y - 1][x - 1];
+                        char cxy3 = seats[y - 1][x + 1];
+                        if((cxy1 == '1' && cxy2 == '1') ||
+                           (cxy3 == '1' && cxy2 == '1') ||
+                           (cxy1 == '1' && cxy3 == '1')){
+                            //存在两个就是这个设置为0
+                            seats[y][x] = '0';
+                        }else if(cxy1 != '1' && cxy2 != '1' && cxy3 != '1'){
+                            seats[y][x] = '1';
+                            temResult++;
+                            if(maxResult < temResult){
+                                maxResult = temResult;
+                            }
+                        }else {
+                            seats[y][x] = '0';
+                        }
+                    }else{
+                        char cxy1 = seats[y][x - 1];
+                        char cxy2 = seats[y - 1][x - 1];
+                        if((cxy1 == '1' && cxy2 == '1')){
+                            //存在两个就是这个设置为0
+                            seats[y][x] = '0';
+                        }else if(cxy1 != '1' && cxy2 != '1'){
+                            seats[y][x] = '1';
+                            temResult++;
+                            if(maxResult < temResult){
+                                maxResult = temResult;
+                            }
+                        }else {
+                            seats[y][x] = '0';
+                        }
+                    }
+                }else{
+                    
+                }
+
+                
+                
+            }
+            
+            
+            
+        }
+    }
+    
+    
+    return 0;
+}
 
 
 int isOk(int *array1,int *array2,int size){
@@ -243,18 +322,18 @@ int maxstudents3(char** seats, int seatsSize, int* seatsColSize) {
 }
 
 
-int maxStudents2(char** seats, int seatsSize, int* seatsColSize) {
-    
-    for (int i = 0; i < 100; i++) {
-        printf("%d =\n",i);
-        int r = change(seats, seatsSize, seatsColSize, i);
-        if (r > 0) {
-            return r;
-        }
-    }
-    
-    return 0;
-}
+//int maxStudents2(char** seats, int seatsSize, int* seatsColSize) {
+//    
+//    for (int i = 0; i < 100; i++) {
+//        printf("%d =\n",i);
+//        int r = change(seats, seatsSize, seatsColSize, i);
+//        if (r > 0) {
+//            return r;
+//        }
+//    }
+//    
+//    return 0;
+//}
 
 int change(char** seats, int seatsSize, int* seatsColSize,int count){
     if (count == 0) {
