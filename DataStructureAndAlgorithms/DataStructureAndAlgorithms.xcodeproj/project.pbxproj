@@ -22,6 +22,7 @@
 		42F2EFD128FE3D4E00AF2438 /* shoppinglist.c in Sources */ = {isa = PBXBuildFile; fileRef = 42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */; };
 		5C01959429323EA8005B2566 /* eightQuee.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C01959329323EA8005B2566 /* eightQuee.c */; };
 		5C01959529323EA8005B2566 /* eightQuee.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C01959329323EA8005B2566 /* eightQuee.c */; };
+		5C19D193293B6805001840CF /* ReverseBetween.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C19D192293B6805001840CF /* ReverseBetween.c */; };
 		5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C35A3D42937980800BE1C10 /* ReverseList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C35A3D32937980800BE1C10 /* ReverseList.c */; };
@@ -78,6 +79,8 @@
 		42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shoppinglist.c; sourceTree = "<group>"; };
 		5C01959229323EA8005B2566 /* eightQuee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eightQuee.h; sourceTree = "<group>"; };
 		5C01959329323EA8005B2566 /* eightQuee.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = eightQuee.c; sourceTree = "<group>"; };
+		5C19D191293B6805001840CF /* ReverseBetween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseBetween.h; sourceTree = "<group>"; };
+		5C19D192293B6805001840CF /* ReverseBetween.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseBetween.c; sourceTree = "<group>"; };
 		5C1D4DC5275C63A40054BB0C /* MinTaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinTaps.h; sourceTree = "<group>"; };
 		5C1D4DC6275C63A40054BB0C /* MinTaps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinTaps.c; sourceTree = "<group>"; };
 		5C35A3D22937980800BE1C10 /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
@@ -201,6 +204,15 @@
 			path = "八皇后算法";
 			sourceTree = "<group>";
 		};
+		5C19D190293B67E1001840CF /* 链表内指定区间反转 */ = {
+			isa = PBXGroup;
+			children = (
+				5C19D191293B6805001840CF /* ReverseBetween.h */,
+				5C19D192293B6805001840CF /* ReverseBetween.c */,
+			);
+			path = "链表内指定区间反转";
+			sourceTree = "<group>";
+		};
 		5C35A3D12937979E00BE1C10 /* 反转链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5C19D190293B67E1001840CF /* 链表内指定区间反转 */,
 				5C35A3D12937979E00BE1C10 /* 反转链表 */,
 				5C36DECB29339211001316A9 /* 字符串合并处理 */,
 				5C01959129323E80005B2566 /* 八皇后算法 */,
@@ -499,6 +512,7 @@
 				5C44F28729320F4D0066C924 /* StringEncode.c in Sources */,
 				5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,
+				5C19D193293B6805001840CF /* ReverseBetween.c in Sources */,
 				5C35A3D42937980800BE1C10 /* ReverseList.c in Sources */,
 				5CA38CB9278D63C100E7CEE6 /* MaxStudents.c in Sources */,
 				4287453F290B787E008677BC /* SortString.c in Sources */,
