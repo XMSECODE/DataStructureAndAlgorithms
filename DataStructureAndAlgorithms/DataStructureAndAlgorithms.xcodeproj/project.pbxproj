@@ -25,6 +25,7 @@
 		5C19D193293B6805001840CF /* ReverseBetween.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C19D192293B6805001840CF /* ReverseBetween.c */; };
 		5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
+		5C2564D8293F6D38005C124E /* MergeKLists.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C2564D7293F6D38005C124E /* MergeKLists.c */; };
 		5C2AA8A7293CCB6C00D340FF /* ReverseKGroup.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C2AA8A6293CCB6C00D340FF /* ReverseKGroup.c */; };
 		5C35A3D42937980800BE1C10 /* ReverseList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C35A3D32937980800BE1C10 /* ReverseList.c */; };
 		5C36DECE2933924F001316A9 /* StringMerge.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C36DECD2933924F001316A9 /* StringMerge.c */; };
@@ -85,6 +86,8 @@
 		5C19D192293B6805001840CF /* ReverseBetween.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseBetween.c; sourceTree = "<group>"; };
 		5C1D4DC5275C63A40054BB0C /* MinTaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinTaps.h; sourceTree = "<group>"; };
 		5C1D4DC6275C63A40054BB0C /* MinTaps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinTaps.c; sourceTree = "<group>"; };
+		5C2564D6293F6D38005C124E /* MergeKLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeKLists.h; sourceTree = "<group>"; };
+		5C2564D7293F6D38005C124E /* MergeKLists.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MergeKLists.c; sourceTree = "<group>"; };
 		5C2AA8A5293CCB6C00D340FF /* ReverseKGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseKGroup.h; sourceTree = "<group>"; };
 		5C2AA8A6293CCB6C00D340FF /* ReverseKGroup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseKGroup.c; sourceTree = "<group>"; };
 		5C35A3D22937980800BE1C10 /* ReverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
@@ -219,6 +222,15 @@
 			path = "链表内指定区间反转";
 			sourceTree = "<group>";
 		};
+		5C2564D5293F6D14005C124E /* 合并k个已排序的链表 */ = {
+			isa = PBXGroup;
+			children = (
+				5C2564D6293F6D38005C124E /* MergeKLists.h */,
+				5C2564D7293F6D38005C124E /* MergeKLists.c */,
+			);
+			path = "合并k个已排序的链表";
+			sourceTree = "<group>";
+		};
 		5C2AA8A4293CCB5100D340FF /* 链表中的节点每k个一组翻转 */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5C2564D5293F6D14005C124E /* 合并k个已排序的链表 */,
 				5C677EC5293E2C4B00155545 /* 合并两个排序的链表 */,
 				5C2AA8A4293CCB5100D340FF /* 链表中的节点每k个一组翻转 */,
 				5C19D190293B67E1001840CF /* 链表内指定区间反转 */,
@@ -523,6 +536,7 @@
 			files = (
 				5C677EC8293E2C5E00155545 /* MergeList.c in Sources */,
 				5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */,
+				5C2564D8293F6D38005C124E /* MergeKLists.c in Sources */,
 				5CA810A02760E47C009474DC /* SumNumbers.c in Sources */,
 				42BB3E04291E3EC700E5CCAC /* IntAndIP.c in Sources */,
 				5C01959429323EA8005B2566 /* eightQuee.c in Sources */,
