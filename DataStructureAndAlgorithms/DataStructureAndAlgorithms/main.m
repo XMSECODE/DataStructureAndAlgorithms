@@ -322,6 +322,7 @@ int main(int argc, const char * argv[]) {
             lp = lp->next;
         }
     }
+    struct ListNode *ls = fp;
     lp = reverseKGroup(fp,2);
     while (1) {
         printf("%d",lp->val);
@@ -333,5 +334,3 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
-//
-//
