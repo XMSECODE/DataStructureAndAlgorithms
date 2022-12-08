@@ -50,6 +50,7 @@
 		5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */; };
 		5CC264B2278448A3004B79D5 /* FindLengthOfLCIS.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */; };
 		5CC51E2F278EA38D00DB2999 /* MaxStudents.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CA38CB8278D63C100E7CEE6 /* MaxStudents.c */; };
+		5CFAC01B2942201E00BAE2A1 /* EntryNodeOfLoop.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFAC01A2942201E00BAE2A1 /* EntryNodeOfLoop.c */; };
 		5CFD390427622989000F5F6A /* MinScoreTriangulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD390327622989000F5F6A /* MinScoreTriangulation.c */; };
 		5CFD390527622989000F5F6A /* MinScoreTriangulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CFD390327622989000F5F6A /* MinScoreTriangulation.c */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,8 @@
 		5CA810A32760E50C009474DC /* Snip20211208_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20211208_8.png; sourceTree = "<group>"; };
 		5CC264AF278448A0004B79D5 /* FindLengthOfLCIS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindLengthOfLCIS.h; sourceTree = "<group>"; };
 		5CC264B0278448A0004B79D5 /* FindLengthOfLCIS.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FindLengthOfLCIS.c; sourceTree = "<group>"; };
+		5CFAC0192942201E00BAE2A1 /* EntryNodeOfLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryNodeOfLoop.h; sourceTree = "<group>"; };
+		5CFAC01A2942201E00BAE2A1 /* EntryNodeOfLoop.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = EntryNodeOfLoop.c; sourceTree = "<group>"; };
 		5CFD390227622989000F5F6A /* MinScoreTriangulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinScoreTriangulation.h; sourceTree = "<group>"; };
 		5CFD390327622989000F5F6A /* MinScoreTriangulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinScoreTriangulation.c; sourceTree = "<group>"; };
 		5CFD390627622A40000F5F6A /* Snip20211209_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20211209_16.png; sourceTree = "<group>"; };
@@ -338,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5CFAC0182942201000BAE2A1 /* 链表中环的入口结点 */,
 				5C3A2B172940CD85000292AB /* 判断链表中是否有环 */,
 				5C2564D5293F6D14005C124E /* 合并k个已排序的链表 */,
 				5C677EC5293E2C4B00155545 /* 合并两个排序的链表 */,
@@ -421,6 +425,15 @@
 				5C1D4DC6275C63A40054BB0C /* MinTaps.c */,
 			);
 			path = "灌溉花园的最少水龙头数目";
+			sourceTree = "<group>";
+		};
+		5CFAC0182942201000BAE2A1 /* 链表中环的入口结点 */ = {
+			isa = PBXGroup;
+			children = (
+				5CFAC0192942201E00BAE2A1 /* EntryNodeOfLoop.h */,
+				5CFAC01A2942201E00BAE2A1 /* EntryNodeOfLoop.c */,
+			);
+			path = "链表中环的入口结点";
 			sourceTree = "<group>";
 		};
 		5CFD390127622973000F5F6A /* 多边形三角剖分的最低得分 */ = {
@@ -548,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C677EC8293E2C5E00155545 /* MergeList.c in Sources */,
+				5CFAC01B2942201E00BAE2A1 /* EntryNodeOfLoop.c in Sources */,
 				5CC264B1278448A0004B79D5 /* FindLengthOfLCIS.c in Sources */,
 				5C2564D8293F6D38005C124E /* MergeKLists.c in Sources */,
 				5CA810A02760E47C009474DC /* SumNumbers.c in Sources */,
