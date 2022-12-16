@@ -36,6 +36,7 @@
 #import "eightQuee.h"
 #include "StringMerge.h"
 #include "ReverseKGroup.h"
+#include "sortInList.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -305,32 +306,33 @@ int main(int argc, const char * argv[]) {
    
 //    eightQuee();
 //    StringMerge();
-    struct ListNode *lp = NULL;
-    struct ListNode *fp = NULL;
-    for (int i = 0; i < 2; i++) {
-        if(i == 0){
-            struct ListNode *l = malloc(sizeof(struct ListNode));
-            l->val = i + 1;
-            l->next = NULL;
-            lp = l;
-            fp = lp;
-        }else{
-            struct ListNode *l = malloc(sizeof(struct ListNode));
-            l->val = i + 1;
-            l->next = NULL;
-            lp->next = l;
-            lp = lp->next;
-        }
-    }
-    struct ListNode *ls = fp;
-    lp = reverseKGroup(fp,2);
-    while (1) {
-        printf("%d",lp->val);
-        lp = lp->next;
-        if(lp == NULL){
-            break;
-        }
-    }
+//    struct ListNode *lp = NULL;
+//    struct ListNode *fp = NULL;
+//    for (int i = 0; i < 2; i++) {
+//        if(i == 0){
+//            struct ListNode *l = malloc(sizeof(struct ListNode));
+//            l->val = i + 1;
+//            l->next = NULL;
+//            lp = l;
+//            fp = lp;
+//        }else{
+//            struct ListNode *l = malloc(sizeof(struct ListNode));
+//            l->val = i + 1;
+//            l->next = NULL;
+//            lp->next = l;
+//            lp = lp->next;
+//        }
+//    }
+//    struct ListNode *ls = fp;
+//    lp = reverseKGroup(fp,2);
+//    while (1) {
+//        printf("%d",lp->val);
+//        lp = lp->next;
+//        if(lp == NULL){
+//            break;
+//        }
+//    }
+    test();
     
     return 0;
 }

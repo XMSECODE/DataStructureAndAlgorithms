@@ -22,6 +22,7 @@
 		42F2EFD128FE3D4E00AF2438 /* shoppinglist.c in Sources */ = {isa = PBXBuildFile; fileRef = 42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */; };
 		5C01959429323EA8005B2566 /* eightQuee.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C01959329323EA8005B2566 /* eightQuee.c */; };
 		5C01959529323EA8005B2566 /* eightQuee.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C01959329323EA8005B2566 /* eightQuee.c */; };
+		5C0CA108294A166500CF6D3B /* sortInList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C0CA107294A166500CF6D3B /* sortInList.c */; };
 		5C19D193293B6805001840CF /* ReverseBetween.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C19D192293B6805001840CF /* ReverseBetween.c */; };
 		5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
 		5C1D4DC8275C63A40054BB0C /* MinTaps.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C1D4DC6275C63A40054BB0C /* MinTaps.c */; };
@@ -42,6 +43,7 @@
 		5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5515AB2785734A005F70DF /* CanBeValid.c */; };
 		5C5515AD2785734A005F70DF /* CanBeValid.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C5515AB2785734A005F70DF /* CanBeValid.c */; };
 		5C677EC8293E2C5E00155545 /* MergeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C677EC7293E2C5E00155545 /* MergeList.c */; };
+		5C75E1E929474BF8005FE160 /* AddInList.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C75E1E829474BF8005FE160 /* AddInList.c */; };
 		5C7EC7A827564625006691F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7A727564625006691F0 /* main.m */; };
 		5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C7EC7AF275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c */; };
 		5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D5E76275AF9D5000DDA97 /* CharIsUnique.c */; };
@@ -86,6 +88,8 @@
 		42F2EFCF28FE3D4E00AF2438 /* shoppinglist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shoppinglist.c; sourceTree = "<group>"; };
 		5C01959229323EA8005B2566 /* eightQuee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eightQuee.h; sourceTree = "<group>"; };
 		5C01959329323EA8005B2566 /* eightQuee.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = eightQuee.c; sourceTree = "<group>"; };
+		5C0CA106294A166500CF6D3B /* sortInList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sortInList.h; sourceTree = "<group>"; };
+		5C0CA107294A166500CF6D3B /* sortInList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sortInList.c; sourceTree = "<group>"; };
 		5C19D191293B6805001840CF /* ReverseBetween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseBetween.h; sourceTree = "<group>"; };
 		5C19D192293B6805001840CF /* ReverseBetween.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ReverseBetween.c; sourceTree = "<group>"; };
 		5C1D4DC5275C63A40054BB0C /* MinTaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinTaps.h; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		5C5515AE278575AB005F70DF /* Snip20220105_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snip20220105_9.png; sourceTree = "<group>"; };
 		5C677EC6293E2C5E00155545 /* MergeList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeList.h; sourceTree = "<group>"; };
 		5C677EC7293E2C5E00155545 /* MergeList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MergeList.c; sourceTree = "<group>"; };
+		5C75E1E729474BF8005FE160 /* AddInList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddInList.h; sourceTree = "<group>"; };
+		5C75E1E829474BF8005FE160 /* AddInList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AddInList.c; sourceTree = "<group>"; };
 		5C7EC7A427564625006691F0 /* DataStructureAndAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureAndAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7EC7A727564625006691F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C7EC7AE275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetMaxLenthNotTheSameCharSubString.h; sourceTree = "<group>"; };
@@ -223,6 +229,15 @@
 				5C01959329323EA8005B2566 /* eightQuee.c */,
 			);
 			path = "八皇后算法";
+			sourceTree = "<group>";
+		};
+		5C0CA105294A165700CF6D3B /* 单链表的排序 */ = {
+			isa = PBXGroup;
+			children = (
+				5C0CA106294A166500CF6D3B /* sortInList.h */,
+				5C0CA107294A166500CF6D3B /* sortInList.c */,
+			);
+			path = "单链表的排序";
 			sourceTree = "<group>";
 		};
 		5C19D190293B67E1001840CF /* 链表内指定区间反转 */ = {
@@ -343,6 +358,15 @@
 			path = "合并两个排序的链表";
 			sourceTree = "<group>";
 		};
+		5C75E1E629474BE3005FE160 /* 链表相加(二) */ = {
+			isa = PBXGroup;
+			children = (
+				5C75E1E729474BF8005FE160 /* AddInList.h */,
+				5C75E1E829474BF8005FE160 /* AddInList.c */,
+			);
+			path = "链表相加(二)";
+			sourceTree = "<group>";
+		};
 		5C7EC79B27564625006691F0 = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +389,8 @@
 			isa = PBXGroup;
 			children = (
 				5C7EC7A727564625006691F0 /* main.m */,
+				5C0CA105294A165700CF6D3B /* 单链表的排序 */,
+				5C75E1E629474BE3005FE160 /* 链表相加(二) */,
 				5C34B6C5294471D00024E5BE /* 删除链表的倒数第n个节点 */,
 				5C3FF62F2943693C00FEA83C /* 链表中倒数最后k个结点 */,
 				5CFAC0182942201000BAE2A1 /* 链表中环的入口结点 */,
@@ -601,6 +627,7 @@
 				42F2EFD028FE3D4E00AF2438 /* shoppinglist.c in Sources */,
 				5C1D4DC7275C63A40054BB0C /* MinTaps.c in Sources */,
 				5C8D5E77275AF9D5000DDA97 /* CharIsUnique.c in Sources */,
+				5C0CA108294A166500CF6D3B /* sortInList.c in Sources */,
 				5C506158275BC682009C5DA8 /* IsPalindrome.c in Sources */,
 				5C7EC7A827564625006691F0 /* main.m in Sources */,
 				5C7EC7B0275646E1006691F0 /* GetMaxLenthNotTheSameCharSubString.c in Sources */,
@@ -610,6 +637,7 @@
 				5C44F28729320F4D0066C924 /* StringEncode.c in Sources */,
 				5C5515AC2785734A005F70DF /* CanBeValid.c in Sources */,
 				5C5422B82758FE070090F40B /* ReverseDataTable.c in Sources */,
+				5C75E1E929474BF8005FE160 /* AddInList.c in Sources */,
 				5C19D193293B6805001840CF /* ReverseBetween.c in Sources */,
 				5C35A3D42937980800BE1C10 /* ReverseList.c in Sources */,
 				5CA38CB9278D63C100E7CEE6 /* MaxStudents.c in Sources */,
